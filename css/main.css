@@ -203,7 +203,7 @@ img {
 }
 
 .header__contacts {
-  display: flex;
+  display: none;
   align-items: center;
 }
 .header__contacts .item:not(:last-child) {
@@ -250,6 +250,13 @@ img {
 
 .current {
   color: var(--accent-color);
+}
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  border-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
 
 .section__hero {

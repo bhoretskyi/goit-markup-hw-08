@@ -61,7 +61,7 @@
 
 
 .header__contacts {
-  display: flex;
+  display: none;
   align-items: center;
   .item:not(:last-child) {
     margin-right: 50px;
@@ -114,3 +114,13 @@
 .current {
     color: var(--accent-color);
   }
+
+  .menu-button {
+    
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+    border: 1px solid #0000001a;
+  }
+     
+  
