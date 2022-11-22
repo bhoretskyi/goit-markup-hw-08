@@ -252,11 +252,24 @@ img {
   color: var(--accent-color);
 }
 
-.menu-button {
+.menu-open {
   width: 30px;
   height: 30px;
   border-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+
+.mobile-close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section__hero {
