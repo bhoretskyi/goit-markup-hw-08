@@ -15,9 +15,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 768px) {
-    width: 100%;
+  @media screen and (min-width: 480px) {
+  width: 480px;
+  margin: 0 auto;
   height: auto;
+  max-width: 100%;
+  
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  height: auto;
+  margin: 0 auto;;
   max-width: 100%;
   background-color: #2f303a;
   text-align: center;
@@ -31,6 +38,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  }
 
     
   }
@@ -67,10 +75,22 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and (min-width: 1200px){
+      font-size: 44px;
+      max-width: 696px;
+
+
+  }
   
 }
 
 .hero__button {
   width: 200px;
+  @media screen and (min-width: 1200px){
+      width: 216px;
+      
+
+
+  }
 }
  
