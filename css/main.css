@@ -730,25 +730,47 @@ img {
   background-color: #2f303a;
 }
 
-.container__footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-end;
+@media screen and (min-width: 768px) {
+  .container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
 }
 
 .footer__info {
-  margin-right: 70px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__info {
+    margin-right: 70px;
+  }
 }
 
-.information__logo {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .information__logo {
+    margin-right: 0;
+  }
 }
 
 .adress {
   margin-top: 20px;
 }
-.adress__item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (min-width: 1200px) {
+  .adress {
+    margin-top: 20px;
+  }
+  .adress__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 /* Адреса */
@@ -771,7 +793,13 @@ img {
 }
 
 .footer-soc-container {
-  margin-right: 93px;
+  margin-top: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-container {
+    margin-right: 93px;
+  }
 }
 
 .footer__title {
@@ -786,8 +814,15 @@ img {
 
 .footer-soclist {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soclist {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+  }
 }
 
 .soclist__item {
@@ -826,6 +861,11 @@ img {
   fill: var(--primary-white-color);
 }
 
+.subscribe__container {
+  text-align: center;
+  margin-top: 60px;
+}
+
 .footer__subscribe-form {
   display: flex;
   justify-content: space-between;
@@ -833,10 +873,9 @@ img {
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
-  margin-right: 15px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -864,6 +903,14 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    margin-right: 15px;
+  }
+}
 
 .subscribe__icon {
   fill: var(--primary-white-color);
@@ -871,7 +918,7 @@ img {
 }
 
 .subscribe__button {
-  margin-top: 0;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   display: flex;
