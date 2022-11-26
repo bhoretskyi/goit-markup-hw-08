@@ -14,7 +14,7 @@
      @media screen and (min-width: 1200px) {
       display: flex;
     align-items: baseline;
-    justify-content: flex-end;
+    
   }
       
    }
@@ -69,7 +69,7 @@
   }
   }
   .footer-soc-container {
-    margin-top: 60px;
+    
     text-align: center;
     @media screen and (min-width: 1200px) {
       margin-right: 93px;
@@ -78,6 +78,7 @@
     
   }
   .footer__title {
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 0.87;
@@ -85,7 +86,9 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
-  }
+     @media screen and (min-width: 1200px) {
+      text-align: start;
+  }}
   .footer-soclist {
     display: flex;
     justify-content: center;
@@ -145,6 +148,10 @@
   .subscribe__container {
     text-align: center;
     margin-top: 60px;
+    @media screen and (min-width: 1200px) {
+    margin-top: 0;
+
+  }
   }
   
   .footer__subscribe-form {
