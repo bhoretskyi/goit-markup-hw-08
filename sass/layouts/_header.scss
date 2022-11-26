@@ -217,7 +217,8 @@ letter-spacing: 0.02em;
 }
 .mobile-navigation__list
  {
-  
+  margin-left: 40px;
+  margin-top: 48px;
   .item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -256,4 +257,7 @@ line-height: 1.22;
 letter-spacing: 0.02em;
 
 color: var(--accent-color);
+}
+.mobile-menu-bot {
+  margin-left: 40px;
 }
