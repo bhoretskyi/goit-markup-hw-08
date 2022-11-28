@@ -318,6 +318,7 @@ img {
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  transition: opacity 300ms linear, visibility 300ms linear;
 }
 .mobile-menu > .container {
   height: 100%;
@@ -357,6 +358,7 @@ img {
 }
 .mobile-close-button:hover, .mobile-close-button:focus {
   fill: var(--accent-color);
+  transition: fill 300ms linear, visibility 300ms linear;
 }
 
 .mobile-navigation__link {
@@ -374,6 +376,7 @@ img {
 }
 .mobile-navigation__link:hover, .mobile-navigation__link:focus {
   color: var(--accent-color);
+  transition: color 300ms linear, visibility 300ms linear;
 }
 
 .current {

@@ -173,6 +173,7 @@
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
+  transition: opacity 300ms linear, visibility 300ms linear;
   > .container {
     height: 100%;
     width: 100%;
@@ -212,6 +213,7 @@ top:10px;
    &:hover,
   &:focus {
     fill: var(--accent-color);
+    transition: fill 300ms linear, visibility 300ms linear;
   }
   
 } 
@@ -231,6 +233,7 @@ letter-spacing: 0.02em;
   &:hover,
   &:focus {
     color: var(--accent-color);
+    transition: color  300ms linear, visibility 300ms linear;
   }
 }
 .current {
