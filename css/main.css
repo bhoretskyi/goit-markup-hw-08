@@ -165,6 +165,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 
 /* Навигація */
@@ -382,12 +388,12 @@ img {
   margin-bottom: 32px;
 }
 
-.mobile-contacts__item:not(:last-child) {
-  margin-bottom: 32px;
+.mobile__contacts {
+  margin-bottom: 64px;
 }
 
-.mobile-contacts__item:last-child {
-  padding-bottom: 64px;
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__phone {
@@ -422,7 +428,17 @@ img {
 
 .mobile-soc-list {
   display: flex;
-  gap: 20px;
+  gap: 5px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-soc-list {
+    gap: 10px;
+  }
+}
+
+.mobile-soc-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-soc-link {
@@ -491,7 +507,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section__hero {
-    width: 100%;
+    width: 1600px;
     height: auto;
     max-width: 100%;
     background-color: #2f303a;
@@ -694,7 +710,6 @@ img {
     flex-wrap: nowrap;
   }
   .team__members-list .members__item:not(:last-child) {
-    margin-right: 30px;
     padding-bottom: 30px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -953,6 +968,11 @@ img {
 .footer__info {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__info {
