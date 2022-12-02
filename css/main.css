@@ -841,14 +841,23 @@ img {
 
 .buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
-.buttons .product__filter-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 1200px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .buttons .product__filter-item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .product__filter-button {
+  width: 125px;
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
@@ -878,11 +887,13 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
-.portfolio-list .product__list-item {
-  width: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-  border: 1px solid #eeeeee;
+@media screen and (min-width: 1200px) {
+  .portfolio-list .product__list-item {
+    width: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #eeeeee;
+  }
 }
 
 .product__list-link {

@@ -1,9 +1,15 @@
 .portfolio-list {
+
   .product__list-item {
-    width: calc((100% - 90px) / 3);
+    @media screen and (min-width: 1200px)  {
+      width: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
     border: 1px solid #eeeeee;
+   
+    
+  }
+    
   }
     display: flex;
     flex-wrap: wrap;
